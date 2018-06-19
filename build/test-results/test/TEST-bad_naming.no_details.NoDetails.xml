@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="bad_naming.no_details.NoDetails" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-14T20:28:40" hostname="kzaikin-ub18" time="0.02">
+  <properties/>
+  <testcase name="shouldMakeCoffee" classname="bad_naming.no_details.NoDetails" time="0.018"/>
+  <testcase name="brew_makesCoffee" classname="bad_naming.no_details.NoDetails" time="0.0"/>
+  <testcase name="testCoffeeMaker" classname="bad_naming.no_details.NoDetails" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

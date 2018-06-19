@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="many_tests_in_one.RawTypeTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-06-14T20:28:40" hostname="kzaikin-ub18" time="0.012">
+  <properties/>
+  <testcase name="rawTypes" classname="many_tests_in_one.RawTypeTest" time="0.012"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

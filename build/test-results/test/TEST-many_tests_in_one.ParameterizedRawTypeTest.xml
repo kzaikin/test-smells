@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="many_tests_in_one.ParameterizedRawTypeTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-06-14T20:28:40" hostname="kzaikin-ub18" time="0.001">
+  <properties/>
+  <testcase name="rawTypes[getRawType(class java.lang.String) is class java.lang.String]" classname="many_tests_in_one.ParameterizedRawTypeTest" time="0.0"/>
+  <testcase name="rawTypes[getRawType(java.util.List&lt;java.lang.String&gt;) is interface java.util.List]" classname="many_tests_in_one.ParameterizedRawTypeTest" time="0.0"/>
+  <testcase name="rawTypes[getRawType(class [Ljava.lang.String;) is class [Ljava.lang.String;]" classname="many_tests_in_one.ParameterizedRawTypeTest" time="0.0"/>
+  <testcase name="rawTypes[getRawType(? extends java.lang.CharSequence) is interface java.lang.CharSequence]" classname="many_tests_in_one.ParameterizedRawTypeTest" time="0.0"/>
+  <testcase name="rawTypes[getRawType(? extends java.util.List&lt;java.lang.String&gt;) is interface java.util.List]" classname="many_tests_in_one.ParameterizedRawTypeTest" time="0.0"/>
+  <testcase name="rawTypes[getRawType(T) is class java.lang.Object]" classname="many_tests_in_one.ParameterizedRawTypeTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

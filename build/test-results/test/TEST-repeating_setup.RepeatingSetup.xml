@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="repeating_setup.RepeatingSetup" tests="4" skipped="0" failures="0" errors="0" timestamp="2018-06-14T20:28:40" hostname="kzaikin-ub18" time="0.006">
+  <properties/>
+  <testcase name="noBrew_noCoffee2" classname="repeating_setup.RepeatingSetup" time="0.002"/>
+  <testcase name="noBrew_noCoffee" classname="repeating_setup.RepeatingSetup" time="0.0"/>
+  <testcase name="brew_makesCoffee2" classname="repeating_setup.RepeatingSetup" time="0.0"/>
+  <testcase name="brew_makesCoffee" classname="repeating_setup.RepeatingSetup" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

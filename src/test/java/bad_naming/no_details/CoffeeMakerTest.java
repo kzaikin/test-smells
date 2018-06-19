@@ -17,13 +17,8 @@ import java.io.PrintStream;
 import static org.junit.Assert.assertThat;
 import static utils.SystemOutMatcher.has;
 
-/**
- * Название тестового метода должно раскрывать, что делает тест.
- * Нормальная структура теста: setup -> act -> assert -> teardown.
- * В названии теста уместно записать действия act и assert.
- */
 @RunWith(MockitoJUnitRunner.class)
-public class NoDetails {
+public class CoffeeMakerTest {
     @Mock private Heater heater;
     @Mock private Pump pump;
 

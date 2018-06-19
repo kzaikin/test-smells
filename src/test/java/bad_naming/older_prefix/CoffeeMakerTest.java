@@ -1,4 +1,4 @@
-package bad_naming.tautology;
+package bad_naming.older_prefix;
 
 import coffee.CoffeeMaker;
 import coffee.Heater;
@@ -17,16 +17,8 @@ import java.io.PrintStream;
 import static org.junit.Assert.assertThat;
 import static utils.SystemOutMatcher.has;
 
-/**
- * В названии метода должно указываться действие и проверяемое условие.
- * Префикс  test запутывает писателя, т.к. представляет собой действие и создаёт иллюзию,
- * что действие в названии тестового метода уже указано, и название остаётся незавершённым.
- *
- * Раньше в JUnit тестовые методы должны были начинаться с test, чтобы JUnit распознал их по соглашению.
- * В JUnit4 тестовые методы предваряются аннотацией @Test, и начинать их с префикса test не нужно
- */
 @RunWith(MockitoJUnitRunner.class)
-public class Tautology {
+public class CoffeeMakerTest {
     @Mock private Heater heater;
     @Mock private Pump pump;
 

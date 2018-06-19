@@ -17,4 +17,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     testCompile 'org.hamcrest:hamcrest-all:1.3'
     testCompile 'org.mockito:mockito-inline:2.18.3'
+
+    testCompile 'org.robolectric:android-all:8.0.0_r4-robolectric-0'
 }

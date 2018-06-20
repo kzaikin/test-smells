@@ -32,7 +32,7 @@ private void readSmells(File dir, action) {
     dir.listFiles().each { file ->
         if (file.isDirectory()) {
             if (!(smellRoot.toPath() <=> Paths.get(file.parent))) {
-                action("## $file.name")
+                action("### $file.name")
             }
             readSmells(file, action)
         } else {

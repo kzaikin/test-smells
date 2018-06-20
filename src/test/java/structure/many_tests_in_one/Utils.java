@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package many_tests_in_one;
+package structure.many_tests_in_one;
 
 import java.lang.reflect.*;
 

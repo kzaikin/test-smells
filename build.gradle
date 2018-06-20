@@ -1,3 +1,5 @@
+import java.nio.file.Paths
+
 plugins {
     id 'java'
 }
@@ -11,6 +13,42 @@ repositories {
     mavenCentral()
 }
 
+ext.smellRoot = new File('src/test/java')
+
+task('assembleReadme') {
+    new File("smells.md").withWriter { w ->
+        readSmells(smellRoot, { s ->
+            w.writeLine(s)
+        })
+    }
+}
+
+/**
+ * Output as this
+ * ## structure
+ * - [many_tests_in_one](src/test/java/structure/many_tests_in_one): Много тестов в одном тестовом методе
+ */
+private void readSmells(File dir, action) {
+    dir.listFiles().each { file ->
+        if (file.isDirectory()) {
+            if (!(smellRoot.toPath() <=> Paths.get(file.parent))) {
+                action("## $file.name")
+            }
+            readSmells(file, action)
+        } else {
+            if (file.name == 'README.md') {
+                file.withReader {
+                    def matcher = it.readLine() =~ /[ #]*(.*)/
+                    if (matcher.find()) {
+                        def title = matcher.group(1)
+                        action("- [$dir.name]($dir): $title")
+                    }
+                }
+            }
+        }
+    }
+}
+
 dependencies {
     testCompile 'com.google.dagger:dagger:2.16'
     testCompile 'com.google.guava:guava:25.1-jre'
@@ -18,5 +56,6 @@ dependencies {
     testCompile 'org.hamcrest:hamcrest-all:1.3'
     testCompile 'org.mockito:mockito-inline:2.18.3'
 
+    testCompile 'org.robolectric:robolectric:3.8'
     testCompile 'org.robolectric:android-all:8.0.0_r4-robolectric-0'
 }

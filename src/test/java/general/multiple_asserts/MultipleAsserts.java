@@ -1,4 +1,4 @@
-package multiple_asserts;
+package general.multiple_asserts;
 
 import org.junit.Test;
 import sample.Bad;

@@ -1,19 +1,22 @@
-package code_wall;
+/*
+ * Copyright (c) 2018
+ */
+
+package general.multiple_asserts.code_wall;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Before;
 import org.junit.Test;
-import org.mockito.*;
+import org.mockito.ArgumentMatcher;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
 import sample.Good;
 
 import javax.annotation.Nonnull;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.hamcrest.Matchers.allOf;
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
 import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package many_tests_in_one;
+package structure.many_tests_in_one;
 
 import com.google.common.reflect.TypeToken;
 import org.junit.Test;
@@ -24,7 +24,7 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 
-import static many_tests_in_one.Utils.getRawType;
+import static structure.many_tests_in_one.Utils.getRawType;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
 

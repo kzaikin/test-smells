@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2028
+ * Copyright (c) 2018
  */
 
-package code_wall;
+package general.multiple_asserts.code_wall;
 
 import java.util.Map;
 

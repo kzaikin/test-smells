@@ -1,4 +1,8 @@
-package repeating_setup;
+/*
+ * Copyright (c) 2018
+ */
+
+package general.multiple_asserts.repeating_setup;
 
 import coffee.CoffeeMaker;
 import coffee.Heater;
@@ -6,12 +10,10 @@ import coffee.Pump;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 import sample.Bad;
 import sample.Good;
 
-import javax.print.Doc;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 

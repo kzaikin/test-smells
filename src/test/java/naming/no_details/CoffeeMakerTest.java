@@ -1,4 +1,4 @@
-package bad_naming.older_prefix;
+package naming.no_details;
 
 import coffee.CoffeeMaker;
 import coffee.Heater;
@@ -31,8 +31,17 @@ public class CoffeeMakerTest {
         coffeeMaker = new CoffeeMaker(heater, pump);
     }
 
+    /**
+     * It is not clear what action is performed and what is being checked.
+     */
     @Bad
-    @Test public void testBrewMakesCoffee() {
+    @Test public void testCoffeeMaker() {
+        coffeeMaker.brew();
+        assertThat(output, has(CoffeeMaker.COFFEE));
+    }
+
+    @Good
+    @Test public void shouldMakeCoffee() {
         coffeeMaker.brew();
         assertThat(output, has(CoffeeMaker.COFFEE));
     }
@@ -42,4 +51,5 @@ public class CoffeeMakerTest {
         coffeeMaker.brew();
         assertThat(output, has(CoffeeMaker.COFFEE));
     }
+
 }

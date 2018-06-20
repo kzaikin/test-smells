@@ -1,4 +1,4 @@
-package many_tests_in_one;
+package structure.many_tests_in_one;
 
 @SuppressWarnings("unused") // Used reflectively.
 class A<T> {

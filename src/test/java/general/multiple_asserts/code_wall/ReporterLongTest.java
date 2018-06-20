@@ -2,7 +2,7 @@
  * Copyright (c) 2018
  */
 
-package code_wall;
+package general.multiple_asserts.code_wall;
 
 import org.json.JSONException;
 import org.json.JSONObject;

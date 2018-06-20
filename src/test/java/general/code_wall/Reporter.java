@@ -2,7 +2,7 @@
  * Copyright (c) 2018
  */
 
-package general.multiple_asserts.code_wall;
+package general.code_wall;
 
 import java.util.Map;
 

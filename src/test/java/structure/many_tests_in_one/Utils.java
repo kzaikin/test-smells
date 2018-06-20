@@ -47,7 +47,7 @@ public class Utils {
         }
         if (type instanceof TypeVariable) {
             // We could use the variable's bounds, but that won't work if there are multiple. Having a raw
-            // type that's more general than necessary is okay.
+            // type that's more readability than necessary is okay.
             return Object.class;
         }
         if (type instanceof WildcardType) {

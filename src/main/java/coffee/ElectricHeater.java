@@ -1,6 +1,6 @@
 package coffee;
 
-class ElectricHeater implements Heater {
+public class ElectricHeater implements Heater {
   boolean heating;
 
   @Override public void on() {

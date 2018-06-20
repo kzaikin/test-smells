@@ -1,8 +1,8 @@
 Этот проект содержит `Test Smells` - примеры плохого дизайна и реализации юнит тестов. Все примеры взяты из реальных пулл-реквестов. Рядом с плохим примером всегда лежит способ избавиться от проблемы, сделав тест лучше.
 
-Цель проекта - помогать во внедрении юнит-тестирования в новые и существующие проекты.
+Смеллы сформулированы так, чтобы на них можно было давать ссылку в пул-реквесте.
 
-В репозитории можно найти не только примеры плохого дизайна тестов, но и простые и эффективные примеры рекомендуемых практик.
+Цель проекта - помогать во внедрении юнит-тестирования в новые и существующие проекты.
 
 Код использует `JUnit4` тесты с `Mockito` и `Hamcrest`, но принципы смеллов не зависят от инструментов, и применимы к любым фреймворкам для тестирования и языкам.
 
@@ -16,12 +16,16 @@
 В пакетах лежат файлы с тестами, содержащие примеры хороших `@Good` и плохих `@Bad` тестов.
 
 ## Test Smells
+### wrong_tools
+- [inherit_for_verify](src/test/java/wrong_tools/inherit_for_verify): Наследование для отслеживания переданных аргументов
 ### structure
 - [multiple_asserts](src/test/java/structure/multiple_asserts): Методы содержат несколько ассертов
 - [many_tests_in_one](src/test/java/structure/many_tests_in_one): Много тестов в одном тестовом методе
 - [repeating_setup](src/test/java/structure/repeating_setup): Повторяется настройка тестовых методов
-### general
-- [code_wall](src/test/java/general/code_wall): Стена текста
+### readability
+- [code_wall](src/test/java/readability/code_wall): Стена текста
+### reliability
+- [inherit_for_override](src/test/java/reliability/inherit_for_override): Наследование проверяемого класса для переопределения поведения
 ### naming
 - [older_prefix](src/test/java/naming/older_prefix): Лишние префиксы в названии тестов
 - [no_action_or_assertion](src/test/java/naming/no_action_or_assertion): В имени теста нет действия или проверяемых условий

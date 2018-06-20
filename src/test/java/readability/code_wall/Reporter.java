@@ -2,7 +2,7 @@
  * Copyright (c) 2018
  */
 
-package general.code_wall;
+package readability.code_wall;
 
 import java.util.Map;
 

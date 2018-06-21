@@ -8,6 +8,7 @@
 - [inherit_for_verify](src/test/java/improper_tools/inherit_for_verify): Наследование для отслеживания переданных аргументов
 ### reliability
 - [random](src/test/java/reliability/random): Недетерминированные тесты 
+- [thread_sleep](src/test/java/reliability/thread_sleep): Используется `Thread#sleep`
 - [visible_for_testing](src/test/java/reliability/visible_for_testing): Код только для тестов AKA `@VisibleForTesting`
 - [inherit_for_override](src/test/java/reliability/inherit_for_override): Наследование проверяемого класса для переопределения поведения
 ### naming

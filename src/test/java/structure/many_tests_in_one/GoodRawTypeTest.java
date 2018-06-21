@@ -44,15 +44,12 @@ public class GoodRawTypeTest {
                         Object.class}};
     }
 
-    @Parameter
-    public Type sourceType;
+    @Parameter(value = 0) public Type sourceType;
 
-    @Parameter(value = 1)
-    public Class<?> rawType;
+    @Parameter(value = 1) public Class<?> rawType;
 
-    @Good("Test is short. Data is specified declaratively. Test results display each check separately.")
+    @Good("Test is short. Test run results display each check separately.")
     @Test public void rawTypes() {
         assertThat(getRawType(sourceType), equalTo(rawType));
     }
-
 }

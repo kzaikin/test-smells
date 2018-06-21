@@ -33,7 +33,9 @@ import static structure.many_tests_in_one.Utils.getRawType;
  * for test smell demo.
  */
 public class RawTypeTest {
-    @Bad("Many similar cases are checked in single method. In test results it is not clear what has been checked and when some check fails one has to inspect all the cases")
+    @Bad("Many similar cases are checked in single method. " +
+            "In test results it is not clear what has been checked " +
+            "and when some check fails one has to inspect all the cases")
     @Test public void rawTypes() throws NoSuchMethodException {
         assertThat(getRawType(String.class), equalTo(String.class));
 

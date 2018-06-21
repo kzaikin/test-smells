@@ -13,13 +13,9 @@ import java.util.Map;
 
 import static com.google.common.collect.ImmutableMap.of;
 import static java.util.Arrays.asList;
-import static junit.framework.TestCase.assertTrue;
 import static org.hamcrest.Matchers.*;
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
 
-/**
- */
 public class GoodLibraryTest {
     static final Map<String, List<String>> REFERENCE_CONTENTS = of(
             "foo", asList("foo1", "foo2"),

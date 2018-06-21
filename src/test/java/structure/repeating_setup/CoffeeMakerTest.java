@@ -8,7 +8,6 @@ import coffee.CoffeeMaker;
 import coffee.Heater;
 import coffee.Pump;
 import org.junit.Test;
-import org.mockito.Mock;
 import sample.Bad;
 
 import java.io.ByteArrayOutputStream;

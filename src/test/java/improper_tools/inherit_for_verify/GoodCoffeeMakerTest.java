@@ -1,23 +1,16 @@
 /*
- * Copyright (c) 2018
+ * Copyright (c) 2018 Test Smells Project. All rights reserved.
+ * Author: Kosta Zaikin <zaikin@list.ru>
  */
 
-package wrong_tools.inherit_for_verify;
+package improper_tools.inherit_for_verify;
 
 import coffee.CoffeeMaker;
-import coffee.ElectricHeater;
 import coffee.Heater;
 import coffee.Pump;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
-import org.mockito.junit.MockitoJUnitRunner;
-import sample.Bad;
 import sample.Good;
 
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 

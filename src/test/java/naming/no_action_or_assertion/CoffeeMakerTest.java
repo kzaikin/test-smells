@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2018 Test Smells Project. All rights reserved.
+ * Author: Kosta Zaikin <zaikin@list.ru>
+ */
+
 package naming.no_action_or_assertion;
 
 import coffee.CoffeeMaker;
@@ -31,22 +36,19 @@ public class CoffeeMakerTest {
         coffeeMaker = new CoffeeMaker(heater, pump);
     }
 
-    /**
-     * It is not clear what action is performed and what is being checked.
-     */
-    @Bad
+    @Bad("It is not clear what action is performed and what is being checked")
     @Test public void testCoffeeMaker() {
         coffeeMaker.brew();
         assertThat(output, has(CoffeeMaker.COFFEE));
     }
 
-    @Good
+    @Good("It is clear a coffee should be made, but it is not clear what action is performed")
     @Test public void shouldMakeCoffee() {
         coffeeMaker.brew();
         assertThat(output, has(CoffeeMaker.COFFEE));
     }
 
-    @Good
+    @Good("From the name it is clear a coffee is checked after brew. Perfect.")
     @Test public void brew_makesCoffee() {
         coffeeMaker.brew();
         assertThat(output, has(CoffeeMaker.COFFEE));

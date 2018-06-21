@@ -24,16 +24,16 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 
-import static structure.many_tests_in_one.Utils.getRawType;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
+import static structure.many_tests_in_one.Utils.getRawType;
 
 /**
  * This file is a copy of https://github.com/square/retrofit/blob/master/retrofit/src/test/java/retrofit2/CallAdapterTest.java
  * for test smell demo.
  */
 public class RawTypeTest {
-    @Bad
+    @Bad("Many similar cases are checked in single method. In test results it is not clear what has been checked and when some check fails one has to inspect all the cases")
     @Test public void rawTypes() throws NoSuchMethodException {
         assertThat(getRawType(String.class), equalTo(String.class));
 

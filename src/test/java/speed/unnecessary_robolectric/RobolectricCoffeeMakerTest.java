@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2018
+ * Copyright (c) 2018 Test Smells Project. All rights reserved.
+ * Author: Kosta Zaikin <zaikin@list.ru>
  */
 
 package speed.unnecessary_robolectric;
@@ -11,13 +12,9 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
-import org.mockito.junit.MockitoJUnitRunner;
-import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import sample.Bad;
-import sample.Good;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

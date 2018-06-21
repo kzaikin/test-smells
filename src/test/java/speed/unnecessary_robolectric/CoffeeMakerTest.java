@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2018
+ * Copyright (c) 2018 Test Smells Project. All rights reserved.
+ * Author: Kosta Zaikin <zaikin@list.ru>
  */
 
 package speed.unnecessary_robolectric;
@@ -8,13 +9,9 @@ import coffee.CoffeeMaker;
 import coffee.Heater;
 import coffee.Pump;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-import org.robolectric.RobolectricTestRunner;
-import sample.Bad;
 import sample.Good;
 
 import java.io.ByteArrayOutputStream;
@@ -23,7 +20,7 @@ import java.io.PrintStream;
 import static org.junit.Assert.assertThat;
 import static utils.SystemOutMatcher.has;
 
-@Good("Using default JUnit runner")
+@Good("Using default JUnit runner which is much faster and takes less memory than Robolectric")
 public class CoffeeMakerTest {
     @Mock private Heater heater;
     @Mock private Pump pump;

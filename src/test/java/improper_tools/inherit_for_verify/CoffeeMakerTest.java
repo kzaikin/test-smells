@@ -1,8 +1,9 @@
 /*
- * Copyright (c) 2018
+ * Copyright (c) 2018 Test Smells Project. All rights reserved.
+ * Author: Kosta Zaikin <zaikin@list.ru>
  */
 
-package wrong_tools.inherit_for_verify;
+package improper_tools.inherit_for_verify;
 
 import coffee.CoffeeMaker;
 import coffee.ElectricHeater;

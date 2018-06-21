@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2018
+ * Copyright (c) 2018 Test Smells Project. All rights reserved.
+ * Author: Kosta Zaikin <zaikin@list.ru>
  */
 
 package structure.many_tests_in_one;
@@ -16,16 +17,16 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.List;
 
-import static structure.many_tests_in_one.Utils.getRawType;
 import static org.hamcrest.Matchers.equalTo;
 import static org.junit.Assert.assertThat;
+import static structure.many_tests_in_one.Utils.getRawType;
 
 /**
  * This file is a refactoring of https://github.com/square/retrofit/blob/master/retrofit/src/test/java/retrofit2/CallAdapterTest.java
  * for test smell demo.
  */
 @RunWith(Parameterized.class)
-public class ParameterizedRawTypeTest {
+public class GoodRawTypeTest {
     @Parameters(name = "getRawType({0}) is {1}")
     public static Object[][] parameters() throws NoSuchMethodException {
         return new Object[][]{
@@ -49,7 +50,7 @@ public class ParameterizedRawTypeTest {
     @Parameter(value = 1)
     public Class<?> rawType;
 
-    @Good
+    @Good("Test is short. Data is specified declaratively. Test results display each check separately.")
     @Test public void rawTypes() {
         assertThat(getRawType(sourceType), equalTo(rawType));
     }

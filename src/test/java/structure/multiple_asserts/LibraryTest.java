@@ -6,10 +6,8 @@ import sample.Bad;
 import java.util.List;
 import java.util.Map;
 
-import static com.google.common.collect.ImmutableMap.of;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertThat;
 
 public class LibraryTest {
     Library library = new Library();

@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2018
+ * Copyright (c) 2018 Test Smells Project. All rights reserved.
+ * Author: Kosta Zaikin <zaikin@list.ru>
  */
 
 package readability.code_wall;
@@ -36,10 +37,9 @@ public class ReporterTest {
         reporter = new Reporter(adapter);
     }
 
-    @Good
+    @Good("Reusable matcher from validJson method is used. Test is short and clear")
     @Test public void logGroupedEvent_createsValidJson() {
         reporter.logGrouppedEvent(GROUP, EVENT, getEventParams());
-
         verify(adapter).reportEvent(eq(GROUP), argThat(validJson()));
     }
 

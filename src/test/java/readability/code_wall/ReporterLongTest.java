@@ -1,5 +1,6 @@
 /*
- * Copyright (c) 2018
+ * Copyright (c) 2018 Test Smells Project. All rights reserved.
+ * Author: Kosta Zaikin <zaikin@list.ru>
  */
 
 package readability.code_wall;
@@ -14,15 +15,13 @@ import sample.Bad;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.hamcrest.Matchers.is;
-import static org.junit.Assert.assertThat;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
 public class ReporterLongTest {
 
-    @Bad
+    @Bad("Test is quite long and it is not easy to understand where is the action and what is being checked")
     @Test public void logGroupedEvent_createsValidJson() throws JSONException {
         Adapter adapter = mock(Adapter.class);
         Reporter reporter = new Reporter(adapter);

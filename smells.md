@@ -8,6 +8,7 @@
 ### improper_tools
 - [inherit_for_verify](src/test/java/improper_tools/inherit_for_verify): Наследование для отслеживания переданных аргументов
 ### reliability
+- [random](src/test/java/reliability/random): Недетерминированные тесты 
 - [inherit_for_override](src/test/java/reliability/inherit_for_override): Наследование проверяемого класса для переопределения поведения
 ### naming
 - [long_name](src/test/java/naming/long_name): Слишком длинное имя тестового метода

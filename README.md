@@ -16,7 +16,6 @@
 В пакетах лежат файлы с тестами, содержащие примеры хороших `@Good` и плохих `@Bad` тестов.
 
 ## Test Smells
-### long_name
 ### structure
 - [multiple_asserts](src/test/java/structure/multiple_asserts): Методы содержат несколько ассертов
 - [many_tests_in_one](src/test/java/structure/many_tests_in_one): Много тестов в одном тестовом методе
@@ -26,6 +25,7 @@
 ### improper_tools
 - [inherit_for_verify](src/test/java/improper_tools/inherit_for_verify): Наследование для отслеживания переданных аргументов
 ### reliability
+- [random](src/test/java/reliability/random): Недетерминированные тесты 
 - [inherit_for_override](src/test/java/reliability/inherit_for_override): Наследование проверяемого класса для переопределения поведения
 ### naming
 - [long_name](src/test/java/naming/long_name): Слишком длинное имя тестового метода

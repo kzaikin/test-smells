@@ -1,3 +1,4 @@
+### long_name
 ### structure
 - [multiple_asserts](src/test/java/structure/multiple_asserts): Методы содержат несколько ассертов
 - [many_tests_in_one](src/test/java/structure/many_tests_in_one): Много тестов в одном тестовом методе
@@ -9,6 +10,7 @@
 ### reliability
 - [inherit_for_override](src/test/java/reliability/inherit_for_override): Наследование проверяемого класса для переопределения поведения
 ### naming
+- [long_name](src/test/java/naming/long_name): Слишком длинное имя тестового метода
 - [older_prefix](src/test/java/naming/older_prefix): Лишние префиксы в названии тестов
 - [no_action_or_assertion](src/test/java/naming/no_action_or_assertion): В имени теста нет действия или проверяемых условий
 ### speed

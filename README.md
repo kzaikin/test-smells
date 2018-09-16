@@ -37,5 +37,8 @@
 - [unnecessary_android_test](src/test/java/speed/unnecessary_android_test): Используется `androidTest` там, можно запустить тест на хосте
 - [unnecessary_robolectric](src/test/java/speed/unnecessary_robolectric): Используется Robolectric там, где нет Android специфики
 
+### know_your_tools
+- [robolectric_shared_preferences](src/test/java/know_your_tools/robolectric_shared_preferences): Сброс `SharedPreferences` после Robolectric теста
+
 ## LICENSE
 This work is under [Apache license](LICENSE)

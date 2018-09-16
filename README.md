@@ -29,6 +29,7 @@
 - [thread_sleep](src/test/java/reliability/thread_sleep): Используется `Thread#sleep`
 - [visible_for_testing](src/test/java/reliability/visible_for_testing): Код только для тестов AKA `@VisibleForTesting`
 - [inherit_for_override](src/test/java/reliability/inherit_for_override): Наследование проверяемого класса для переопределения поведения
+- [modify_global](src/test/java/reliability/modify_global): Изменение глобального состояния
 ### naming
 - [long_name](src/test/java/naming/long_name): Слишком длинное имя тестового метода
 - [older_prefix](src/test/java/naming/older_prefix): Лишние префиксы в названии тестов

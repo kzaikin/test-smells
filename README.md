@@ -16,20 +16,21 @@
 В пакетах лежат файлы с тестами, содержащие примеры хороших `@Good` и плохих `@Bad` тестов.
 
 ## Test Smells
+### know_your_tools
+- [inherit_for_verify](src/test/java/know_your_tools/inherit_for_verify): Наследование для отслеживания переданных аргументов
+- [robolectric_shared_preferences](src/test/java/know_your_tools/robolectric_shared_preferences): Сброс SharedPreferences после Robolectric теста
 ### structure
 - [multiple_asserts](src/test/java/structure/multiple_asserts): Методы содержат несколько ассертов
 - [many_tests_in_one](src/test/java/structure/many_tests_in_one): Много тестов в одном тестовом методе
 - [repeating_setup](src/test/java/structure/repeating_setup): Повторяется настройка тестовых методов
 ### readability
 - [code_wall](src/test/java/readability/code_wall): Стена текста
-### improper_tools
-- [inherit_for_verify](src/test/java/improper_tools/inherit_for_verify): Наследование для отслеживания переданных аргументов
 ### reliability
+- [modify_global](src/test/java/reliability/modify_global): Изменение глобального состояния
 - [random](src/test/java/reliability/random): Недетерминированные тесты 
 - [thread_sleep](src/test/java/reliability/thread_sleep): Используется `Thread#sleep`
 - [visible_for_testing](src/test/java/reliability/visible_for_testing): Код только для тестов AKA `@VisibleForTesting`
 - [inherit_for_override](src/test/java/reliability/inherit_for_override): Наследование проверяемого класса для переопределения поведения
-- [modify_global](src/test/java/reliability/modify_global): Изменение глобального состояния
 ### naming
 - [long_name](src/test/java/naming/long_name): Слишком длинное имя тестового метода
 - [older_prefix](src/test/java/naming/older_prefix): Лишние префиксы в названии тестов
@@ -37,9 +38,6 @@
 ### speed
 - [unnecessary_android_test](src/test/java/speed/unnecessary_android_test): Используется `androidTest` там, можно запустить тест на хосте
 - [unnecessary_robolectric](src/test/java/speed/unnecessary_robolectric): Используется Robolectric там, где нет Android специфики
-
-### know_your_tools
-- [robolectric_shared_preferences](src/test/java/know_your_tools/robolectric_shared_preferences): Сброс `SharedPreferences` после Robolectric теста
 
 ## LICENSE
 This work is under [Apache license](LICENSE)

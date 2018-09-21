@@ -3,7 +3,7 @@
  * Author: Kosta Zaikin <zaikin@list.ru>
  */
 
-package improper_tools.inherit_for_verify;
+package know_your_tools.inherit_for_verify;
 
 import coffee.CoffeeMaker;
 import coffee.ElectricHeater;

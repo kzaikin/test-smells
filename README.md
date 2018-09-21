@@ -35,6 +35,8 @@
 - [long_name](src/test/java/naming/long_name): Слишком длинное имя тестового метода
 - [older_prefix](src/test/java/naming/older_prefix): Лишние префиксы в названии тестов
 - [no_action_or_assertion](src/test/java/naming/no_action_or_assertion): В имени теста нет действия или проверяемых условий
+### completeness
+- [forgotten_option](src/test/java/completeness/forgotten_option): Тест одного исхода
 ### speed
 - [unnecessary_android_test](src/test/java/speed/unnecessary_android_test): Используется `androidTest` там, можно запустить тест на хосте
 - [unnecessary_robolectric](src/test/java/speed/unnecessary_robolectric): Используется Robolectric там, где нет Android специфики

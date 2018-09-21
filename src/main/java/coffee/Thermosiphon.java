@@ -1,13 +1,18 @@
 package coffee;
 
-class Thermosiphon implements Pump {
+public class Thermosiphon implements Pump {
   private final Heater heater;
+  private final Reservoir reservoir;
 
-  Thermosiphon(Heater heater) {
+  public Thermosiphon(Heater heater, Reservoir reservoir) {
     this.heater = heater;
+    this.reservoir = reservoir;
   }
 
   @Override public void pump() {
+    if (reservoir.isEmpty()) {
+      throw new IllegalStateException();
+    }
     if (heater.isHot()) {
       System.out.println("=> => pumping => =>");
     }

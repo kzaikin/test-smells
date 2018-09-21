@@ -17,6 +17,7 @@
 
 ## Test Smells
 ### know_your_tools
+- [catch_exception](src/test/java/know_your_tools/catch_exception): Обработка ожидаемых исключений
 - [inherit_for_verify](src/test/java/know_your_tools/inherit_for_verify): Наследование для отслеживания переданных аргументов
 - [robolectric_shared_preferences](src/test/java/know_your_tools/robolectric_shared_preferences): Сброс SharedPreferences после Robolectric теста
 ### structure
@@ -25,6 +26,8 @@
 - [repeating_setup](src/test/java/structure/repeating_setup): Повторяется настройка тестовых методов
 ### readability
 - [code_wall](src/test/java/readability/code_wall): Стена текста
+### improper_tools
+- [inherit_for_verify](src/test/java/improper_tools/inherit_for_verify): Наследование для отслеживания переданных аргументов
 ### reliability
 - [modify_global](src/test/java/reliability/modify_global): Изменение глобального состояния
 - [random](src/test/java/reliability/random): Недетерминированные тесты 

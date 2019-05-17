@@ -9,7 +9,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.RobolectricTestRunner;
-import sample.Bad;
+import sample.NotSoGood;
 
 import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
@@ -24,8 +24,8 @@ public class GoodModifyGlobalTest {
     }
 
     @Test
-    @Bad("Global system settings are modified and are never set to original value." +
-            "Test execution order affects test results!")
+    @NotSoGood("Global system settings are modified but are set to original value afterwards. " +
+            "Best option is alter the system not to have a global mutable state.")
     public void firstStartIsReadFromSharedPreferences() {
         StaticApplicationStatus.isFirstStart = true;
 

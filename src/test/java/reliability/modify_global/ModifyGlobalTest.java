@@ -32,6 +32,7 @@ public class ModifyGlobalTest {
         assertThat(status.isFirstStart(), is(true));
     }
 
+    // Please note this test is green when run alone and is red when run after another test
     @Test
     public void firstStartIsFalseByDefault() {
         assertThat(status.isFirstStart(), is(false));
